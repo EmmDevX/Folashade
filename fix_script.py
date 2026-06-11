@@ -106,12 +106,12 @@ if (guestForm) {
 
 // --- Achievements System ---
 const achievements = [
-    { id: 'first-visit', title: 'First Visit', description: 'Welcome to Deborah\'s magical birthday site!', icon: '🎉', progress: 100 },
+    { id: 'first-visit', title: 'First Visit', description: 'Welcome to Lase\'s magical birthday site!', icon: '🎉', progress: 100 },
     { id: 'scroll-explorer', title: 'Scroll Explorer', description: 'Explore all sections of the site', icon: '🔍', progress: 0 },
     { id: 'music-lover', title: 'Music Lover', description: 'Play some birthday music', icon: '🎵', progress: 0 },
     { id: 'voice-listener', title: 'Voice Listener', description: 'Listen to all the voice wishes', icon: '🎧', progress: 0 },
     { id: 'wheel-spinner', title: 'Wheel Spinner', description: 'Spin the prize wheel', icon: '🎡', progress: 0 },
-    { id: 'reason-finder', title: 'Reason Finder', description: 'Find 5 reasons why Deborah is amazing', icon: '💖', progress: 0 },
+    { id: 'reason-finder', title: 'Reason Finder', description: 'Find 5 reasons why Lase is amazing', icon: '💖', progress: 0 },
     { id: 'cake-blower', title: 'Cake Blower', description: 'Blow out the birthday candles', icon: '🎂', progress: 0 }
 ];
 
