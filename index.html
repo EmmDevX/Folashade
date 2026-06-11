@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Lase</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Outfit:wght@300;400;500;700&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Cinematic Page Curtain -->
+    <div id="page-curtain">
+      <div class="curtain-content">
+        <h2 class="GreatVibes">For Lase...</h2>
+        <div class="curtain-loader"></div>
+      </div>
+    </div>
+
+    <!-- Ambient Floating Particles -->
+    <div id="ambient-particles"></div>
+
+    <!-- Background Music -->
+    <audio id="bg-music" loop>
+      <source src="assets/Amma-I-love-you.mp3" type="audio/mp3" />
+    </audio>
+    <button id="music-toggle" class="music-btn magnetic" title="Play Music">
+      <i class="fa-solid fa-play"></i>
+      <span class="music-text">Play Music</span>
+    </button>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="video-container">
+        <video autoplay muted loop playsinline id="bg-video">
+          <source src="assets/VID-20260611-WA0247.mp4" type="video/mp4" />
+        </video>
+        <div class="overlay"></div>
+      </div>
+
+      <!-- Floating petals across the hero -->
+      <div class="hero-petals" aria-hidden="true">
+        <span>🌸</span><span>✨</span><span>🌸</span><span>💕</span>
+        <span>🌸</span><span>✨</span><span>🌸</span><span>💕</span>
+        <span>🌸</span><span>💛</span><span>✨</span><span>🌸</span>
+      </div>
+
+      <!-- Glowing ambient ring (decorative) -->
+      <div class="hero-ring" aria-hidden="true"></div>
+
+      <div class="glass-card entrance-card">
+        <!-- Sparkles Container -->
+        <div id="sparkles" class="sparkles-container"></div>
+
+        <!-- Top embellishment -->
+        <div class="hero-top-badge">
+          <span class="hero-crown">👑</span>
+        </div>
+
+        <!-- Tagline -->
+        <p class="hero-eyebrow">✦ Today, the world celebrates ✦</p>
+
+        <h1 class="princess-title">HAPPY<br />BIRTHDAY</h1>
+        <h2 class="name-highlight">Lase</h2>
+
+        <!-- Sweet sub-tagline -->
+        <p class="hero-tagline">
+          You are a gift to this world — beautiful, rare, and irreplaceable. 💙
+        </p>
+
+        <!-- Rose row -->
+        <div class="hero-roses">
+          <span>🌹</span><span>🌸</span><span>🌹</span><span>🌸</span
+          ><span>🌹</span>
+        </div>
+
+        <!-- Scroll invite -->
+        <div class="hero-scroll-hint">
+          <span class="scroll-text">Scroll to explore your world</span>
+          <span class="scroll-arrow">↓</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3D Photo Carousel Section -->
+    <section id="photo-carousel">
+      <h2
+        class="princess-title"
+        style="margin-bottom: 2rem; padding-top: 4rem; text-align: center"
+      >
+        MEMORIES
+      </h2>
+      <p
+        class="subtitle fade pink-subtitle"
+        style="text-align: center; margin-bottom: 4rem"
+      >
+        Drag to spin the carousel!
+      </p>
+      <div class="scene">
+        <div class="carousel" id="drag-carousel">
+          <div class="carousel-cell">
+            <img src="assets/IMG-20260611-WA0249.jpg" alt="Img 1" />
+          </div>
+          <div class="carousel-cell">
+            <img src="assets/IMG-20260611-WA0235.jpg" alt="Img 2" />
+          </div>
+          <div class="carousel-cell">
+            <img src="assets/IMG-20260611-WA0236.jpg" alt="Img 3" />
+          </div>
+          <div class="carousel-cell">
+            <img src="assets/IMG-20260611-WA0237.jpg" alt="Img 4" />
+          </div>
+          <div class="carousel-cell">
+            <img src="assets/IMG-20260611-WA0241.jpg" alt="Img 5" />
+          </div>
+          <div class="carousel-cell">
+            <img src="assets/IMG-20260611-WA0251.jpg" alt="Img 6" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline">
+      <div class="video-container">
+        <video autoplay muted loop playsinline class="bg-video-section">
+          <source src="assets/VID-20260611-WA0242.mp4" type="video/mp4" />
+        </video>
+        <div class="overlay"></div>
+      </div>
+      <h2 class="section-title">A Journey of Beautiful Moments</h2>
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item reveal left">
+          <div class="timeline-content">
+            <div class="timeline-image-container">
+              <img src="assets/IMG-20260611-WA0249.jpg" alt="Memory 1" />
+            </div>
+            <div class="timeline-text">
+              <h3>A Radiant Smile</h3>
+              <p>
+                Your smile lights up every room. Here's to many more moments of
+                pure joy and laughter.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+
+        <!-- Timeline Item 2 -->
+        <div class="timeline-item reveal right">
+          <div class="timeline-content">
+            <div class="timeline-image-container">
+              <img src="assets/IMG-20260611-WA0234.jpg" alt="Memory 2" />
+            </div>
+            <div class="timeline-text">
+              <h3>Grace and Elegance</h3>
+              <p>
+                Always carrying yourself with such royal grace. You inspire
+                everyone around you!
+              </p>
+            </div>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+
+        <!-- Timeline Item 3 -->
+        <div class="timeline-item reveal left">
+          <div class="timeline-content">
+            <div class="timeline-image-container">
+              <img src="assets/IMG-20260611-WA0264.jpg" alt="Memory 3" />
+            </div>
+            <div class="timeline-text">
+              <h3>Unforgettable Adventures</h3>
+              <p>
+                Every moment spent together is a treasure. Sending love on your
+                special day.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+
+        <!-- Timeline Item 4 -->
+        <div class="timeline-item reveal right">
+          <div class="timeline-content">
+            <div class="timeline-image-container">
+              <img src="assets/IMG-20260611-WA0237.jpg" alt="Memory 4" />
+            </div>
+            <div class="timeline-text">
+              <h3>Stunning &amp; Beautiful</h3>
+              <p>
+                Here's wishing you endless happiness and success in the coming
+                year.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+
+        <!-- Timeline Item 5 -->
+        <div class="timeline-item reveal left">
+          <div class="timeline-content">
+            <div class="timeline-image-container">
+              <img src="assets/IMG-20260611-WA0241.jpg" alt="Memory 5" />
+            </div>
+            <div class="timeline-text">
+              <h3>Cherished Memories</h3>
+              <p>May your day be as amazing as you are. Keep shining bright!</p>
+            </div>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+
+        <!-- Timeline Item 6 (Video) -->
+        <div class="timeline-item reveal right">
+          <div class="timeline-content">
+            <div class="timeline-image-container">
+              <video
+                src="assets/VID-20260611-WA0242.mp4"
+                autoplay
+                loop
+                muted
+                playsinline
+              ></video>
+            </div>
+            <div class="timeline-text">
+              <h3>A Royal Celebration</h3>
+              <p>
+                A beautiful highlight of elegance and regal grace that shines
+                all night long.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+
+        <!-- Timeline Item 7 -->
+        <div class="timeline-item reveal left">
+          <div class="timeline-content">
+            <div class="timeline-image-container">
+              <img src="assets/IMG-20260611-WA0251.jpg" alt="Vibrant Energy" />
+            </div>
+            <div class="timeline-text">
+              <h3>Vibrant Energy</h3>
+              <p>
+                Living life to the fullest with unmatched joy, capturing the
+                true spirit of celebration.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!--Love Letter Section-->
+    <section id="love-letter">
+      <div class="letter-container glass-card reveal">
+        <h2 class="princess-title small">My Dearest Lase,</h2>
+
+        <div class="letter-content">
+          <p class="fade-line">Happy Birthday, Bobby ❤️🎂</p>
+
+          <p class="fade-line">
+            Today is all about celebrating the amazing person you are. Even
+            though we're far apart, I miss you more than I can put into words,
+            and I wish I could be there to make your day extra special.
+          </p>
+
+          <p class="fade-line">
+            You have a way of making me smile even from miles away, and I'm
+            grateful to have you in my life. I hope this year brings you endless
+            happiness, success, and everything your heart desires.
+          </p>
+
+          <p class="fade-line">
+            Enjoy your special day, beautiful. Just know that I'm sending you
+            lots of love, warm wishes, and the biggest birthday hugs from afar.
+            ❤️🥰🎉
+          </p>
+
+          <p class="fade-line">Happy Birthday, Bobby. Miss you lots! 💕🎂✨</p>
+
+          <p class="signature fade-line">With love,</p>
+          <h3 class="GreatVibes sign-off fade-line">Gift</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Voice Notes Section -->
+    <section id="wish-wall">
+      <div class="video-container">
+        <video autoplay muted loop playsinline class="bg-video-section">
+          <source src="assets/VID-20260611-WA0247.mp4" type="video/mp4" />
+        </video>
+        <div class="overlay"></div>
+      </div>
+
+      <!-- Floating hearts background -->
+      <div class="floating-hearts" aria-hidden="true">
+        <span>💕</span><span>💙</span><span>✨</span><span>🎀</span>
+        <span>💕</span><span>🌸</span><span>💙</span><span>✨</span>
+        <span>🎀</span><span>💕</span>
+      </div>
+
+      <div class="wishes-header reveal">
+        <p class="wishes-eyebrow">🎧 Tap a card to listen</p>
+        <h2 class="wishes-title">Wishes From Friends</h2>
+        <p class="wishes-sub">
+          Your crew recorded something special just for you 🎀
+        </p>
+      </div>
+
+      <div class="voice-notes-grid reveal">
+        <!-- Friend Wish 1 - Damilola -->
+        <div class="vn-card" onclick="toggleVoiceNote('vn1', this)">
+          <audio id="vn1" src="assets/damilola.ogg"></audio>
+          <div class="vn-avatar">🌸</div>
+          <div class="vn-info">
+            <span class="vn-name">Damilola</span>
+            <span class="vn-tagline">A sweet message from her heart 💌</span>
+            <div class="vn-play-row">
+              <div class="vn-icon"><i class="fa-solid fa-play"></i></div>
+              <div class="vn-wave">
+                <span></span><span></span><span></span><span></span><span></span
+                ><span></span><span></span>
+              </div>
+            </div>
+            <div class="visualizer-container">
+              <canvas class="vn-canvas"></canvas>
+            </div>
+          </div>
+          <div class="vn-shimmer"></div>
+        </div>
+
+        <!-- Friend Wish 2 - Aanu -->
+        <div class="vn-card">
+          <div class="vn-avatar">🎀</div>
+          <div class="vn-info">
+            <span class="vn-name">Aanu</span>
+            <span class="vn-tagline">Sending all the love your way 💕</span>
+
+            <div class="wish-message">
+              Happy birthday ✨️ Long life and prosperity, IJN 🙏 Many more years
+              to come, IJN More money in ur aza Greater heights are yours Enjoy
+              your day 🥰
+            </div>
+            <div class="vn-shimmer"></div>
+          </div>
+        </div>
+
+        <!-- Friend Wish 3 - Emmanuel -->
+        <div class="vn-card">
+          <div class="vn-avatar">✨</div>
+          <div class="vn-info">
+            <span class="vn-name">Emmanuel</span>
+            <span class="vn-tagline">Emmanuel's birthday wish ✨</span>
+
+            <div class="wish-message">
+              Happy birthday Lase 🎉🎂 Long life prosperity IJN . More calendars
+              to destroy
+            </div>
+            <div class="vn-shimmer"></div>
+          </div>
+        </div>
+            <!-- Friend Wish 1 - Adesuyi -->
+        <div class="vn-card" onclick="toggleVoiceNote('vn1', this)">
+          <audio id="vn1" src="assets/suyi.ogg"></audio>
+          <div class="vn-avatar">🎀</div>
+          <div class="vn-info">
+            <span class="vn-name">Adesuyi</span>
+            <span class="vn-tagline">A sweet message from adesuyi</span>
+            <div class="vn-play-row">
+              <div class="vn-icon"><i class="fa-solid fa-play"></i></div>
+              <div class="vn-wave">
+                <span></span><span></span><span></span><span></span><span></span
+                ><span></span><span></span>
+              </div>
+            </div>
+            <div class="visualizer-container">
+              <canvas class="vn-canvas"></canvas>
+            </div>
+          </div>
+          <div class="vn-shimmer"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Spin the Wheel Section -->
+    <section id="spin-wheel">
+      <h2
+        class="princess-title"
+        style="text-align: center; padding-top: 4rem; margin-bottom: 0.75rem"
+      >
+        SPIN THE WHEEL
+      </h2>
+      <p
+        class="subtitle pink-subtitle"
+        style="text-align: center; margin-bottom: 3rem"
+      >
+        Give it a spin and claim your prize! 🎡
+      </p>
+
+      <div class="elegant-wheel-container reveal">
+        <!-- Pointer arrow above wheel -->
+        <div class="pointer-container">
+          <span class="pointer-icon">▼</span>
+        </div>
+
+        <!-- Outer decorative rim (bulbs injected by JS) -->
+        <div class="wheel-rim" id="wheel-rim">
+          <!-- Spinning wheel -->
+          <div class="wheel-elegant" id="wheel-elegant">
+            <!-- Slice labels — centred in each 40° segment -->
+            <div class="slice-text st-1"><span>Spa Day 🧖‍♀️</span></div>
+            <div class="slice-text st-2"><span>Shopping 🛍️</span></div>
+            <div class="slice-text st-3"><span>Dinner Date 🍽️</span></div>
+            <div class="slice-text st-4"><span>Perfume 🌸</span></div>
+            <div class="slice-text st-5"><span>Jewelry 💎</span></div>
+            <div class="slice-text st-6"><span>Flowers 💐</span></div>
+            <div class="slice-text st-7"><span>Movie Night 🍿</span></div>
+            <div class="slice-text st-8"><span>Massage 💆‍♀️</span></div>
+            <div class="slice-text st-9">
+              <span class="teddy-slice"
+                >Teddy Bear
+                <span
+                  style="
+                    filter: sepia(1) hue-rotate(290deg) saturate(5)
+                      brightness(1.1);
+                  "
+                  >🧸</span
+                ></span
+              >
+            </div>
+          </div>
+
+          <!-- Centre spin button -->
+          <button class="center-spin-btn" id="elegant-spin-btn">SPIN!</button>
+        </div>
+
+        <!-- Result popup -->
+        <div id="elegant-spin-result" class="hidden">
+          <h2 class="you-won-title">YOU WON!</h2>
+          <p id="elegant-prize-text"></p>
+          <p
+            style="font-size: 0.95rem; color: #c8dcff; margin: 0.5rem 0 1.5rem"
+          >
+            Screenshot this to claim your prize! 📸
+          </p>
+          <button
+            class="enter-btn"
+            onclick="
+              document
+                .getElementById('elegant-spin-result')
+                .classList.add('hidden')
+            "
+          >
+            Yay! 🎉
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 100 Reasons Why Section -->
+    <section id="reasons-why">
+      <!-- Floating stars background -->
+      <div class="reasons-stars" aria-hidden="true">
+        <span>⭐</span><span>💫</span><span>✨</span><span>🌟</span>
+        <span>💛</span><span>⭐</span><span>✨</span><span>💫</span>
+        <span>🌟</span><span>💛</span><span>✨</span><span>⭐</span>
+      </div>
+
+      <div class="reasons-header reveal">
+        <p class="reasons-eyebrow">💛 A love letter in 100 parts</p>
+        <h2 class="princess-title reasons-title">100 Reasons Why</h2>
+        <div class="elegant-divider"></div>
+        <p class="reasons-desc">
+          Every single time you tap that magical jar, a piece of Adex's heart
+          floats out just for you. Deborah, these are the truest, most beautiful
+          reasons why you are so incredibly loved. 🌸
+        </p>
+      </div>
+
+      <!-- Counter badge -->
+      <div class="reasons-counter reveal">
+        <span id="reasons-tapped">0</span>
+        <span class="counter-label">/ 100 reasons revealed</span>
+      </div>
+
+      <div class="jar-container reveal">
+        <!-- Emoji burst container -->
+        <div class="jar-burst" id="jar-burst" aria-hidden="true"></div>
+
+        <div class="magical-jar" id="magic-jar">
+          <div class="jar-lid"></div>
+          <div class="jar-neck"></div>
+          <div class="jar-body">
+            <div class="jar-label">
+              <span>✨</span>
+              <span class="GreatVibes label-text">Reasons</span>
+            </div>
+            <div class="jar-glow"></div>
+          </div>
+        </div>
+
+        <div class="reason-result-box" id="reason-display">
+          <div class="reason-icon" id="reason-icon">💛</div>
+          <p id="reason-text">
+            Tap the jar above to reveal a reason why you are so incredibly loved
+            🌸
+          </p>
+        </div>
+      </div>
+
+      <!-- Sweet tagline at the bottom -->
+      <p class="reasons-footer-quote reveal">
+        "You are loved more than words can ever say." 💕
+      </p>
+    </section>
+
+    <!-- Interactive Cake Section -->
+    <section id="cake-section">
+      <div id="gift-box" class="gift-container reveal">
+        <h2 class="princess-title smallcake-title">A GIFT FOR YOU</h2>
+        <div class="box">
+          <div class="box-lid">
+            <div class="bow"></div>
+          </div>
+          <div class="box-body"></div>
+        </div>
+        <p class="subtitle fade tap-to-open">TAP TO OPEN</p>
+      </div>
+
+      <div class="cake-container glass-card hidden" id="cake-content">
+        <!-- Balloons Container -->
+        <div class="balloons-container">
+          <div class="balloon b1"></div>
+          <div class="balloon b2"></div>
+          <div class="balloon b3"></div>
+          <div class="balloon b4"></div>
+          <div class="balloon b5"></div>
+        </div>
+
+        <h2 class="princess-title smallcake-title">MAKE A WISH!</h2>
+        <p class="subtitle fade cake-subtitle">
+          BLOW INTO YOUR MICROPHONE TO BLOW OUT THE CANDLES
+        </p>
+
+        <div class="cake flat-cake">
+          <div class="plate flat-plate"></div>
+          <!-- Bottom Tier -->
+          <div class="tier flat-tier tier-bottom">
+            <div class="drip flex-drip">
+              <div class="drop"></div>
+              <div class="drop"></div>
+              <div class="drop"></div>
+              <div class="drop"></div>
+              <div class="drop"></div>
+              <div class="drop"></div>
+              <div class="drop"></div>
+            </div>
+          </div>
+          <!-- Middle Tier -->
+          <div class="tier flat-tier tier-middle">
+            <div class="drip flex-drip">
+              <div class="drop"></div>
+              <div class="drop"></div>
+              <div class="drop"></div>
+              <div class="drop"></div>
+              <div class="drop"></div>
+            </div>
+          </div>
+          <!-- Top Tier -->
+          <div class="tier flat-tier tier-top">
+            <div class="drip flex-drip">
+              <div class="drop"></div>
+              <div class="drop"></div>
+              <div class="drop"></div>
+              <div class="drop"></div>
+            </div>
+          </div>
+
+          <!-- Candles -->
+          <div class="candles">
+            <div class="candle c1">
+              <div class="flame"></div>
+            </div>
+            <div class="candle c2">
+              <div class="flame"></div>
+            </div>
+            <div class="candle c3">
+              <div class="flame"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="mic-controls">
+          <button id="start-mic-btn" class="enter-btn outline-pink magnetic">
+            <i class="fa-solid fa-microphone"></i> ENABLE MIC TO BLOW
+          </button>
+        </div>
+
+        <div id="celebration-msg" class="hidden">
+          <h2 class="GreatVibes">Happy Birthday!</h2>
+          <p>May your year be filled with magic! ✨</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements Shelf (Hidden by default, can be toggled or just used for logic) -->
+    <section id="achievements-shelf" class="hidden">
+      <h2 class="princess-title" style="text-align: center; padding-top: 4rem">
+        Your Journey 🏆
+      </h2>
+      <div class="achievements-grid reveal">
+        <div class="achievement-card locked" data-achievement="first-visit">
+          <div class="achievement-icon">🎉</div>
+          <h3>First Visit</h3>
+          <div class="progress-bar"><div class="progress-fill"></div></div>
+          <span class="progress-text">0%</span>
+        </div>
+        <!-- More cards will be populated or stay here -->
+      </div>
+    </section>
+
+    <!-- Closing Celebration Section -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
