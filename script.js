@@ -136,6 +136,35 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
+    //--- Video Effects ---
+    function toggleVideo(videoId, card) {
+  const video = document.getElementById(videoId);
+
+  if (video.paused) {
+    video.style.display = "block";
+    video.play();
+    card.classList.add("playing");
+
+    const icon = card.querySelector(".vn-icon i");
+    icon.classList.remove("fa-play");
+    icon.classList.add("fa-pause");
+  } else {
+    video.pause();
+
+    const icon = card.querySelector(".vn-icon i");
+    icon.classList.remove("fa-pause");
+    icon.classList.add("fa-play");
+  }
+
+  video.onended = () => {
+    card.classList.remove("playing");
+
+    const icon = card.querySelector(".vn-icon i");
+    icon.classList.remove("fa-pause");
+    icon.classList.add("fa-play");
+  };
+}
+
     // --- Scroll Reveal Animation ---
     const revealElements = document.querySelectorAll('.reveal');
     const fadeLines = document.querySelectorAll('.fade-line');

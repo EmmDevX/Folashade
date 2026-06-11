@@ -3494,6 +3494,26 @@ footer p {
   word-wrap: break-word;
 }
 
+.wish-video {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.vn-video{
+    width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 14px;
+  object-fit: cover;
+  display: block;
+}
+
+.vn-card.playing .wish-video {
+  display: block;
+}
+
 /* Mobile */
 @media (max-width: 768px) {
   footer {
